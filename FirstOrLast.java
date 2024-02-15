@@ -16,17 +16,17 @@ public class ScannerTask {
         System.out.println("Enter 1 to extract first letter form the word.\nEnter 0 to extract last letter from the word: ");
         int option = scanner.nextInt();
 
-        if(option==1){
+        if(option==1 && word.length()>=1){
             //Extracting first letter
             String onlyFirst = word.substring(0,1);
             System.out.println("\n\"" + onlyFirst + "\"");
-        }else if (option==0){
+        }else if (option==0 && word.length()>=1){
             //Removing last letter
             String onlyLast = word.substring(word.length()-1);
             System.out.println("\n\"" + onlyLast + "\"");
         }else{
-            System.out.println("\nEnter only 0 or 1");
+                System.out.println("\nEnter only 0 or 1");
+    }
         }
 
     }
-}
