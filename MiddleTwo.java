@@ -18,7 +18,7 @@ public class ScannerTask {
         if(word.length()%2==0 && word.length()>=2){
             //Calculating the middle index of the word
             int middleIndex = word.length()/2;
-            //Extracting the first letter from each word
+            //Extracting middle letters 
             String middleTwo = word.substring(middleIndex-1, middleIndex+1);
             /*if the word has only 2 letters it will return them with no change*/
 
