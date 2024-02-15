@@ -1,5 +1,5 @@
-/*Given 2 strings, return their concatenation,
-except omit the first char of each.
+/*# Given 2 strings, return their concatenation, except omit the first char of each.
+The strings will be at least length 1.
 
 nonStart("Hello", "There") → "ellohere"
 nonStart("java", "code") → "avaode"
@@ -16,13 +16,16 @@ public class ScannerTask {
         System.out.println("\nEnter the second word: ");
         String secondWord = scanner.nextLine();
 
-        //Extracting the first letter from each word
-        String firstNonStart = firstWord.substring(1);
-        String secondNonStart = secondWord.substring(1);
+        if(firstWord.length()>=1 && secondWord.length()>=1){
+            //Extracting the first letter from each word
+            String firstNonStart = firstWord.substring(1);
+            String secondNonStart = secondWord.substring(1);
 
-        //Printing result
-        System.out.println("\n" + firstNonStart + secondNonStart);
-
+            //Printing result
+            System.out.println("\n" + firstNonStart + secondNonStart);
+        } else{
+            System.out.println("\nMake sure you Entered a word.");
+        }
 
     }
 }
