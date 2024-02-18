@@ -16,7 +16,7 @@ public class ScannerTask {
         String word = scanner.nextLine();
 
         //checking if the entered word has odd length
-        if (word.length() != 0){
+        if (word.length() % 2 != 0){
             int middleIndex = word.length()/2;
             String middleThree = word.substring(middleIndex-1, middleIndex+2);
             System.out.println("\n\""+middleThree+"\"");
